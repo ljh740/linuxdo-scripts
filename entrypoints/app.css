@@ -113,7 +113,7 @@
   margin-top: 10px;
   font-size: 13px;
   font-weight: 500;
-  color: #fff;
+  color: var(--secondary);
   background: linear-gradient(135deg, var(--primary) 0%, var(--primary-medium) 100%);
   border: none;
   cursor: pointer;
@@ -527,6 +527,22 @@
   margin-right: 5px !important;
 }
 
+.topicpreview-btn.opacity1 {
+  opacity: 1 !important;
+  width: 25px;
+  height: 25px;
+  padding: 3px !important;
+  vertical-align: sub;
+}
+
+.topicpreview-btn.opacity1 svg {
+  width: 20px;
+}
+
+.topicpreview-btn.opacity1+.topic-statuses {
+  float: none;
+}
+
 .topic-list-item:hover .topicpreview-btn,
 .topic-list-item:hover .donottopic-btn,
 .topic-list-item:hover .removedonottopic-btn {
@@ -918,7 +934,7 @@ body.body-preview #main-outlet-wrapper {
   max-width: 300px;
 }
 
-.linxudoscripts-tag {
+.linuxdoscripts-tag {
   align-items: center;
   justify-content: center;
   position: relative;
@@ -1048,24 +1064,24 @@ body.body-preview #main-outlet-wrapper {
   }
 }
 
-.linxudoscripts-btn {
+.linuxdoscripts-btn {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 100%;
 }
 
-.linxudoscripts-btn>* {
+.linuxdoscripts-btn>* {
   margin-right: 8px !important;
   font-size: 15px !important;
 }
 
-.linxudoscripts-btn svg {
+.linuxdoscripts-btn svg {
   width: 1.5em !important;
   height: 1.5em !important;
 }
 
-.linxudoscripts-btn>*:last-child {
+.linuxdoscripts-btn>*:last-child {
   margin-right: 0 !important;
 }
 
@@ -1215,6 +1231,7 @@ body.body-preview #main-outlet-wrapper {
 
 #linuxDoLevelPopupContent table tr:nth-child(even) {
   background-color: #ddd;
+  color: #333;
 }
 
 #linuxDoLevelPopupContent .text-green-500 {
